@@ -29,9 +29,6 @@ function draw() {
 		ball.x=width/2;
 		text("GAME OVER\nSCORE:" + score,300,300);
 	}
-	if(score==5){
-		xspeed++;
-	}
 }
 
 function bounce(){
