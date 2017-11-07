@@ -8,7 +8,7 @@ var score = 0;
 var ball = {
 	x:300,
 	y:300,
-	xspeed:5,
+	xspeed:-5,
 	yspeed:2
 };
 
