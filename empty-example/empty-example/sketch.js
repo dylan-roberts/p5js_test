@@ -22,7 +22,7 @@ function draw() {
 	ball.x+=ball.xspeed;
 	paddle();
 	textSize(25);
-	text("Score: " + score, 6,15);
+	text("Score: " + score, 6,40);
 	gameOver();
 }
 
@@ -55,7 +55,7 @@ function gameOver(){
 		ball.xspeed=0;
 		ball.yspeed=0;
 		ball.x=width/2;
-		text("GAME OVER\nSCORE:" + score,300,300);
+		text("GAME OVER\nSCORE:" + score,100,300);
 	}
 }
 
