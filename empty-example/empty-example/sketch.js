@@ -21,7 +21,7 @@ function draw() {
 	ball.y+=ball.yspeed;
 	ball.x+=ball.xspeed;
 	paddle();
-	textSize(50);
+	textSize(25);
 	text("Score: " + score, 6,15);
 	gameOver();
 }
