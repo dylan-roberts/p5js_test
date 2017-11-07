@@ -21,14 +21,9 @@ function draw() {
 	ball.y+=ball.yspeed;
 	ball.x+=ball.xspeed;
 	paddle();
+	textSize(50);
 	text("Score: " + score, 6,15);
-	if(gameover == true){
-		background(255,0,0);
-		ball.xspeed=0;
-		ball.yspeed=0;
-		ball.x=width/2;
-		text("GAME OVER\nSCORE:" + score,300,300);
-	}
+	gameOver();
 }
 
 function bounce(){
@@ -51,6 +46,16 @@ function paddle(){
 		if(ball.y<mouseY-50 || ball.y > mouseY+50){
 			gameover = true;
 		}
+	}
+}
+
+function gameOver(){
+	if(gameover == true){
+		background(255,0,0);
+		ball.xspeed=0;
+		ball.yspeed=0;
+		ball.x=width/2;
+		text("GAME OVER\nSCORE:" + score,300,300);
 	}
 }
 
