@@ -25,7 +25,7 @@ function draw() {
 	text("Score: " + score, 6,40);
 	gameOver();
 	if(score == 10){
-		ball.xspeed = 10;
+		ball.xspeed = 100;
 	}
 }
 
