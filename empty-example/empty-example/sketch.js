@@ -8,7 +8,7 @@ var score = 0;
 var ball = {
 	x:300,
 	y:300,
-	xspeed:-5,
+	xspeed:5,
 	yspeed:2
 };
 
@@ -19,11 +19,14 @@ function draw() {
 	ellipse(ball.x,ball.y,50,50);
 	bounce();
 	ball.y+=ball.yspeed;
-	ball.x+=ball.xspeed;
+	ball.x-=ball.xspeed;
 	paddle();
 	textSize(25);
 	text("Score: " + score, 6,40);
 	gameOver();
+	if(score == 10){
+		ball.xspeed = 10;
+	}
 }
 
 function bounce(){
